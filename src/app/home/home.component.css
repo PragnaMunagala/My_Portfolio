@@ -27,3 +27,8 @@ a.button a:hover {
 .prjct {
   background-color: royalblue;
 }
+
+.profile {
+  height: 200px;
+  width: 150px;
+}
