@@ -1,12 +1,15 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import {RouterModule, Routes} from '@angular/router';
-import {DashboardComponent} from './dashboard/dashboard.component';
+import {HomeComponent} from './home/home.component';
 
 const appRoutes: Routes = [
   // //Default Route
-  {path: '', redirectTo: 'dashboard', pathMatch: 'full'},
-  {path: 'dashboard', component: DashboardComponent}
+  {path: '', redirectTo: 'home', pathMatch: 'full'},
+  {path: 'home', component: HomeComponent},
+  {path: 'experience', component: HomeComponent},
+  {path: 'skills', component: HomeComponent},
+  {path: 'projects', component: HomeComponent},
 ];
 
 @NgModule({

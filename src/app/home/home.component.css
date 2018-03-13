@@ -1,0 +1,29 @@
+button {
+  border-radius: 10px;
+  font-size: 25px;
+  font-weight: bold;
+  width: 60%;
+  height: 100px !important;
+  border: transparent;
+}
+
+button a{
+  color: #ffffff;
+}
+
+a.button a:hover {
+  cursor: pointer;
+  color: palevioletred;
+}
+
+.exp {
+  background-color: limegreen;
+}
+
+.skills {
+  background-color: coral;
+}
+
+.prjct {
+  background-color: royalblue;
+}

@@ -1,0 +1,46 @@
+a {
+  margin: 3% 3%;
+}
+
+.links {
+  display: inline-block;
+  margin: 2% 0%;
+  padding: 0% 2%;
+  width: 100%;
+}
+
+.name {
+  padding-left: 2%;
+}
+
+.name a {
+  font-size: xx-large;
+  font-weight: bold;
+  font-style: italic;
+  margin-left:0% !important;
+}
+
+.name a:hover {
+  color: palevioletred
+}
+
+.links .fa {
+  font-size: 35px;
+}
+
+button {
+  color: #ffffff;
+  border-radius: 5px;
+  font-size: x-large;
+  width: fit-content;
+  background-color: #0275d8;
+  margin-bottom: 2%;
+}
+
+.name p{
+  margin: 0;
+}
+
+.resume {
+  font-size: 25px;
+}
