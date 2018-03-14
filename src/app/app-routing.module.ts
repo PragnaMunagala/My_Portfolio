@@ -10,6 +10,7 @@ const appRoutes: Routes = [
   {path: 'experience', component: HomeComponent},
   {path: 'skills', component: HomeComponent},
   {path: 'projects', component: HomeComponent},
+  {path: 'achievements', component: HomeComponent},
 ];
 
 @NgModule({

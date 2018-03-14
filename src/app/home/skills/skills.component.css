@@ -1,5 +1,20 @@
-.skillList ul{
-  font-size: 20px;
+ul, li{
+  list-style-type: disc;
+  font-weight: normal;
+}
+
+p {
+  font-weight: normal;
+  padding: 2% 4%;
+}
+
+.title p {
+  color: darkmagenta;
+  font-size: medium;
+}
+
+.title{
   font-weight: bold;
-  list-style-type: circle;
+  color: darkblue;
+  font-size: large;
 }

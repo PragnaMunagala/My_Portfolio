@@ -6,10 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./nav-header.component.css', '../app.component.css']
 })
 export class NavHeaderComponent implements OnInit {
-
   constructor() { }
-
   ngOnInit() {
   }
-
 }

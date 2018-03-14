@@ -1,3 +1,12 @@
-<p>
-  experience works!
-</p>
+<div class="detail-row">
+  <ul>
+    <li *ngFor="let item of exp" class="heading">
+      <span class="title">{{item.name}}</span><span class="duration">({{item.duration}})</span>
+      <br>
+      <span class="location">{{item.location}}</span>
+      <ul *ngFor="let r of item.responsibilities">
+        <li>{{r}}</li>
+      </ul>
+    </li>
+  </ul>
+</div>

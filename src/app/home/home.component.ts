@@ -7,18 +7,20 @@ import {Router} from '@angular/router';
   styleUrls: ['./home.component.css', '../app.component.css']
 })
 export class HomeComponent implements OnInit {
-  items = [
-    {name: 'About', url: '/home', cls: 'btn btn-primary'},
-    {name: 'Experience', url: '/experience', cls: 'btn btn-primary'},
-    {name: 'Skills', url: '/skills', cls: 'btn btn-primary'},
-    {name: 'Projects', url: '/projects', cls: 'btn btn-primary'}
-  ];
-
   toDisplay = 'home';
 
   constructor(public router: Router) { }
 
   ngOnInit() {
+    if (this.router.url.includes('experience')) {
+      this.toDisplay = 'exp';
+    } else if (this.router.url.includes('skills')) {
+      this.toDisplay = 'skills';
+    } else if (this.router.url.includes('projects')) {
+      this.toDisplay = 'prjct';
+    } else if (this.router.url.includes('achievements')) {
+      this.toDisplay = 'achievements';
+    }
   }
 
   routingApp(url, name) {
@@ -35,6 +37,8 @@ export class HomeComponent implements OnInit {
         this.toDisplay = 'prjct';
         this.router.navigateByUrl(url);
         break;
+      case 'Resume':
+        window.open(url);
       default:
         this.toDisplay = 'home';
         this.router.navigateByUrl('/home');

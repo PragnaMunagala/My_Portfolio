@@ -1,0 +1,10 @@
+ul, li{
+  list-style-type: disc;
+  font-weight: normal;
+}
+
+ul li{
+  color: darkmagenta;
+  font-size: medium;
+  padding: 1% 0%;
+}

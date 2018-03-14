@@ -1,7 +1,7 @@
-<div class="skillList">
-  <ul *ngFor="let skill of skillset">{{skill.name}}
-    <li *ngFor="let item of skill.tech">
-      {{item}}
+<div class="detail-row">
+  <ul>
+    <li *ngFor="let skill of skillset" class="title">{{skill.name}}
+      <p>{{skill.tech}}</p>
     </li>
   </ul>
 </div>
