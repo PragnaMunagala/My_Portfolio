@@ -100,6 +100,10 @@ export class ProjectsComponent implements OnInit {
 
   selectedRow(item) {
     this.projects[item].show = !this.projects[item].show;
+    for (let i = 0; i < this.projects.length; i++) {
+      if (i !== item) {
+        this.projects[i].show = false;
+      }
+    }
   }
-
 }
