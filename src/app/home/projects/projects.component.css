@@ -1,0 +1,35 @@
+.title{
+  font-weight: bold;
+  color: darkblue;
+  font-size: large;
+  padding-top: 1%;
+}
+
+.title li {
+  color: darkmagenta;
+  font-size: medium;
+  font-weight: normal;
+}
+
+.project {
+  padding-left: 4%;
+}
+
+.project div{
+  padding-left: 5%;
+}
+
+ul li {
+  list-style-type: disc;
+}
+
+.project .fa {
+  font-size: 25px;
+}
+
+.project span {
+  color: green;
+  font-size: x-large;
+  font-weight: bold;
+  padding-left: 2%;
+}

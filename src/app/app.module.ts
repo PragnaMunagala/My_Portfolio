@@ -9,6 +9,7 @@ import { ExperienceComponent } from './home/experience/experience.component';
 import { SkillsComponent } from './home/skills/skills.component';
 import { ProjectsComponent } from './home/projects/projects.component';
 import { AchievementsComponent } from './home/achievements/achievements.component';
+import {DropdownModule} from 'ngx-dropdown';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { AchievementsComponent } from './home/achievements/achievements.componen
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    DropdownModule
   ],
   providers: [],
   bootstrap: [AppComponent]

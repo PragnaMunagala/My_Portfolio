@@ -1,3 +1,12 @@
-<p>
-  projects works!
-</p>
+<div *ngFor="let p of projects; let i = index" class="project"><a (click)="selectedRow(i)"><i class="fa fa-plus-circle"></i></a>
+  <span>{{p.category}}</span>
+  <div *ngIf="p.show">
+    <ul>
+      <li *ngFor="let prj of p.project" class="title">{{prj.title}}
+        <ul *ngFor="let desc of prj.desc">
+          <li>{{desc}}</li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+</div>

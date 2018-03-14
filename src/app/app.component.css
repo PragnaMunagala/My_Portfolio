@@ -27,12 +27,7 @@ hr {
 html, body {
   height: 100% !important;
   overflow: auto;
-}
-
-body{
-  overflow-x: hidden;
-  overflow-y: scroll;
-  background-color: wheat;
+  width: 100% !important;
 }
 
 .row{
@@ -43,8 +38,6 @@ body{
   padding: 3% 3%;
 }
 
-.desc{
-  padding: 2% 0%;
+.desc {
   height: 100%;
-  background-color: wheat;
 }
