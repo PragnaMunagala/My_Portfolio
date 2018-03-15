@@ -73,6 +73,7 @@ ul li {
 
 .dropdown {
   display: inline;
+  line-height: 5;
 }
 
 .dropdown-menu {
@@ -82,4 +83,8 @@ ul li {
 .menu-open .fa {
   font-size: 35px;
   padding: 2px !important;
+}
+
+.row{
+  padding-bottom: 0 !important;
 }

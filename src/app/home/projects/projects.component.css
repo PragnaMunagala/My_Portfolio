@@ -51,3 +51,14 @@ ul li {
   text-decoration: underline !important;
   color: blue !important;
 }
+
+.options {
+  color: blue !important;
+  margin: 2% 2%;
+  font-size: medium;
+  cursor: pointer;
+}
+
+.options-box {
+  margin-bottom: 2%;
+}

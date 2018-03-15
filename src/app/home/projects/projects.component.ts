@@ -74,7 +74,7 @@ export class ProjectsComponent implements OnInit {
       project: [
         {
           title: 'Secure Banking Application',
-          lang: ['Programming Language', 'Java Spring'],
+          lang: ['Programming Language', 'Java'],
           desc: [
             'Developed end-to-end secure banking web application where a user can make money transactions in a secure way.',
             'Enhanced the security of the application by having OTP and proper session handling mechanism where a refresh token is ' +
@@ -89,25 +89,47 @@ export class ProjectsComponent implements OnInit {
       show: false
     },
     {
-      category: 'Linux Kernel - Device Driver development',
+      category: 'Kernel Programming',
       project: [
         {
-          title: 'I2C',
-          lang: ['Programming Language'],
-          desc: ['test', 'test'],
-          src: []
+          title: 'Device Driver Implementation in Linux',
+          lang: ['Programming Language', 'C'],
+          desc: [
+            'Developed a user library and i2c client device driver for EEPROM I/O operations.' +
+            'In addition, the user library and kernel driver will light up an led whenever EEPROM is busy.',
+            'Developed multi-threaded user application and Serial Peripheral Interface(SPI) device driver to generate an animation on ' +
+            '8x8 LED matrix based on distance of an object measured using ultrasonic sensor'
+          ],
+          src: ['Source Code', 'https://github.com/PragnaMunagala/ESP']
         },
+        // {
+        //   title: 'Event and Signal Handling in Linux',
+        //   lang: ['Programming Language', 'C'],
+        //   desc: [
+        //     'Events from input devices like mouse, keyboard are captured to  etc.',
+        //     'Used Kernelshark to show the timestamp of a signal handler associated to a running, runnable, blocked and delayed thread.',
+        //     'Developed a library that allows SIGIO signal being delivered to all the registered threads.'
+        //   ],
+        //   src: []
+        // // },
+        // {
+        //   title: 'Real Time tasks',
+        //   lang: ['Programming Language', 'C'],
+        //   desc: ['test', 'test'],
+        //   src: []
+        // },
         {
-          title: 'SPI',
-          lang: ['Programming Language'],
-          desc: ['test', 'test'],
-          src: []
-        },
-        {
-          title: 'Real time',
-          lang: ['Programming Language'],
-          desc: ['test', 'test'],
-          src: []
+          title: 'Zephyr Programming',
+          lang: ['Programming Language', 'C'],
+          desc: [
+            'Implemented an application on Zephyr OS installed on Intel Galileo Gen2 SOC, to track the real time position of an object ' +
+            'using gyroscope and accelerometer sensors.',
+            'As the sensor data is collected in real time, Kalman filter is used to mitigate the noise.',
+            'Position and orientation of the object is calculated using linear acceleration and angular velocity values using I2C bus.',
+            'Object movement is captured using gyroscope and accelerometer sensors and applied Kalman filter for state estimation.',
+            'The distance of the object is measured using Ultra-sonic sensor.',
+          ],
+          src: ['Source Code', 'https://github.com/PragnaMunagala/Real-Time-Embedded-Systems/tree/master/Zephyr_RTOS']
         }
       ],
       show: false
@@ -116,12 +138,12 @@ export class ProjectsComponent implements OnInit {
       category: 'Computer Architecture',
       project: [
         {
-          title: 'Cache',
+          title: 'Cache Replacement Policy',
           lang: ['Programming Language', 'C'],
           desc: [
             'Implemented cache replacement policies to decide which cache line should be evicted before replacing it with new cache line ' +
             'from memory.',
-            'Simple scalar simulator is used as a framework to plugin the algorithm and running the workloads.',
+            'Simple scalar simulator is used as a framework to plugin the algorithm and running the benchmarks.',
             'Algorithms implemented are Partial Least Recently Used (P - LRU) and Static Re-Reference Interval Prediction (SRRIP).',
             'The above two algorithms are compared based on cache miss rate for different variations of cache block size and set ' +
             'associativity.',
@@ -134,7 +156,7 @@ export class ProjectsComponent implements OnInit {
           lang: ['Programming Language', 'C'],
           desc: [
             'Implemented branch prediction, where the program counter of the upcoming instruction is predicted.',
-            'Simple scalar simulator is used as a framework to plugin the algorithm and running the workloads.',
+            'Simple scalar simulator is used as a framework to plugin the algorithm and running the benchmarks.',
             'Predictors implemented are Optimized Geometric History Length (O-GEHL) predictor and Tournament branch predictor.',
             'The above predictors are compared using prediction accuracy and IPC (Instructions per cycle) metrics using gcc, go and ' +
             'anagram benchmarks.'
@@ -145,20 +167,20 @@ export class ProjectsComponent implements OnInit {
       ],
       show: false
     },
-    {
-      category: 'Digital Image and Video Processing',
-      project: [
-        {
-          title: 'Image Filtering',
-          desc: ['test', 'test']
-        },
-        {
-          title: 'Android Application - Image',
-          desc: ['test', 'test']
-        }
-      ],
-      show: false
-    }
+    // {
+    //   category: 'Digital Image and Video Processing',
+    //   project: [
+    //     {
+    //       title: 'Image Filtering',
+    //       desc: ['test', 'test']
+    //     },
+    //     {
+    //       title: 'Android Application - Image',
+    //       desc: ['test', 'test']
+    //     }
+    //   ],
+    //   show: false
+    // }
   ];
 
   constructor() { }
@@ -172,6 +194,11 @@ export class ProjectsComponent implements OnInit {
       if (i !== item) {
         this.projects[i].show = false;
       }
+    }
+  }
+  options(text) {
+    for (let i = 0; i < this.projects.length; i++) {
+        this.projects[i].show = text;
     }
   }
 }
