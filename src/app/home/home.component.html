@@ -1,12 +1,15 @@
 <div class="detail-row">
-    <div *ngIf="toDisplay == 'home'">
-      <div>
-        <img src="../../assets/images/pic.jpg" class="profile">
+    <div class="row" *ngIf="toDisplay == 'home'">
+      <div class="col-lg-4 col-md-4 col-xs-12">
+        <img src="./assets/images/pic.jpg" class="profile">
       </div>
-      <div>
+      <div class="col-lg-8 col-md-8 col-xs-12 content">
         <span>
       I'm a Masters' student at Arizona State University in the department of Computer Engineering (Computer Systems). I am currently working
-      as an Angular Developement Intern at AdviNOW Medical, Scottsdale. I have been working as a front end developer
+      as an Angular Developement Intern at AdviNOW Medical, Scottsdale.
+          <br>
+          <br>
+          I have been working as a front end developer
         for 3+ years.
       <br>
       <br>
@@ -16,6 +19,13 @@
           "Software is like our universe. It requires imagination and vision to know the depth of it."
         </i>
       </span>
+        <ul>
+          <li><a routerLinkActive="active-link" routerLink="/experience">Experience</a></li>
+          <li><a routerLinkActive="active-link" routerLink="/skills">Skills</a></li>
+          <li><a routerLinkActive="active-link" routerLink="/projects">Academic Projects</a></li>
+          <li><a routerLinkActive="active-link" routerLink="/achievements">Achievements</a></li>
+          <li><a routerLinkActive="active-link" href="./assets/files/Pragna_Munagala_Resume.pdf" target="_blank">Resume</a></li>
+        </ul>
       </div>
     </div>
     <app-experience *ngIf="toDisplay == 'exp'"></app-experience>

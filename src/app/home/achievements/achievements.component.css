@@ -8,3 +8,15 @@ ul li{
   font-size: medium;
   padding: 1% 0%;
 }
+
+.medal {
+  height: 350px;
+  width: 50%;
+  padding: 2% 5% 2% 5%;
+}
+
+.award {
+  width: 70%;
+  height: 350px;
+  padding: 2% 5% 2% 5%;
+}

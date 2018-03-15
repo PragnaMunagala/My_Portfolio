@@ -4,8 +4,6 @@ a {
 
 .links {
   display: inline;
-  padding: 4% 0% 0% 0%;
-  margin: 2% 0% 2% 60%;
   width: 100%;
 }
 
@@ -48,9 +46,9 @@ button {
 }
 
 ul {
-  padding: 1% 0% 0% 0%;
   font-weight: bold;
   font-size: medium;
+  float: right;
 }
 
 ul li {
@@ -75,6 +73,7 @@ ul li {
 
 .dropdown {
   display: inline;
+  line-height: 5;
 }
 
 .dropdown-menu {
@@ -84,4 +83,8 @@ ul li {
 .menu-open .fa {
   font-size: 35px;
   padding: 2px !important;
+}
+
+.row{
+  padding-bottom: 0 !important;
 }
