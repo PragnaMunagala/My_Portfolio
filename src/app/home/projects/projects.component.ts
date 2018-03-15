@@ -117,9 +117,17 @@ export class ProjectsComponent implements OnInit {
       project: [
         {
           title: 'Cache',
-          lang: ['Programming Language'],
-          desc: ['test', 'test'],
-          src: []
+          lang: ['Programming Language', 'C'],
+          desc: [
+            'Implemented cache replacement policies to decide which cache line should be evicted before replacing it with new cache line ' +
+            'from memory.',
+            'Simple scalar simulator is used as a framework to plugin the algorithm and running the workloads.',
+            'Algorithms implemented are Partial Least Recently Used (P - LRU) and Static Re-Reference Interval Prediction (SRRIP).',
+            'The above two algorithms are compared based on cache miss rate for different variations of cache block size and set ' +
+            'associativity.',
+            'Benchmarks used are anagram, gcc and go.'
+          ],
+          src: ['Source Code', 'https://github.com/PragnaMunagala/Computer-Architecture/tree/master/Cache_Replacement_Policy']
         },
         {
           title: 'Branch Prediction',
@@ -129,7 +137,7 @@ export class ProjectsComponent implements OnInit {
             'Simple scalar simulator is used as a framework to plugin the algorithm and running the workloads.',
             'Predictors implemented are Optimized Geometric History Length (O-GEHL) predictor and Tournament branch predictor.',
             'The above predictors are compared using prediction accuracy and IPC (Instructions per cycle) metrics using gcc, go and ' +
-            'anagram workloads.'
+            'anagram benchmarks.'
           ],
           src: ['Source Code',
             'https://github.com/PragnaMunagala/Computer-Architecture/tree/master/Branch_Prediction']
