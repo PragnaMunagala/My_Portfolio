@@ -3,8 +3,22 @@
   <div *ngIf="p.show">
     <ul>
       <li *ngFor="let prj of p.project" class="title">{{prj.title}}
-        <ul *ngFor="let desc of prj.desc">
-          <li>{{desc}}</li>
+        <ul class="details">
+          <li><Span>{{prj.lang[0]}}:</Span>
+            <ul>
+              <li>{{prj.lang[1]}}</li>
+            </ul>
+          </li>
+          <li class="prjct-desc"><span>Description:</span>
+            <ul>
+              <li *ngFor="let desc of prj.desc">{{desc}}</li>
+            </ul>
+          </li>
+          <li><span>{{prj.src[0]}}:</span>
+            <ul>
+              <li><a class="link" href="{{prj.src[1]}}" target="_blank">{{prj.src[1]}}</a></li>
+            </ul>
+          </li>
         </ul>
       </li>
     </ul>

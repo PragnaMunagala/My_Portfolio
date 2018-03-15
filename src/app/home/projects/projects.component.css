@@ -33,3 +33,21 @@ ul li {
   font-weight: bold;
   padding-left: 2%;
 }
+
+.details span, .prjct-desc span{
+  color: red;
+  font-size: medium;
+  font-weight: bold;
+  padding-left: 0;
+}
+
+.prjct-desc li{
+  color: darkmagenta;
+  font-size: medium;
+  font-weight: normal;
+}
+
+.link{
+  text-decoration: underline !important;
+  color: blue !important;
+}
