@@ -14,6 +14,7 @@ export class ExperienceComponent implements OnInit {
       responsibilities: [
         'Develop modules for automating healthcare applications using Angular 4',
         'Implement Redux with Angular which provides a predictable state container and Sass for styling the application',
+        'Unit testing the applications using Karma, Jasmine frameworks',
         'Maintain the integrity of the user data in production database',
         'Ensure the quality of code, using unit and integration tests and continuous integration',
       ]
