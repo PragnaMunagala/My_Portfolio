@@ -41,3 +41,8 @@ html, body {
 .desc {
   height: 100%;
 }
+
+.page-head {
+  font-weight: bold;
+  text-decoration: underline;
+}
