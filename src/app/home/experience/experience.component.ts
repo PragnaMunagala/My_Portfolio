@@ -8,15 +8,27 @@ import { Component, OnInit } from '@angular/core';
 export class ExperienceComponent implements OnInit {
   exp = [
     {
+      name: 'Software Developer at AdviNOW Medical',
+      location: 'Scottsdale, Arizona',
+      duration: 'May 2018 - Present',
+      responsibilities: [
+        'UI team lead assigning and monitoring the tasks to each contributor',
+        'Work as JIRA administrator',
+        'Develop modules for automating healthcare applications using Angular 4, Redux and Sass',
+        'Unit test the applications using Karma, Jasmine frameworks',
+        'Co-ordinate with off-shore teams for smooth work-flow'
+      ]
+    },
+    {
       name: 'Angular Development Intern at AdviNOW Medical',
       location: 'Scottsdale, Arizona',
-      duration: 'February 2018 - present',
+      duration: 'February 2018 - May 2018',
       responsibilities: [
-        'Develop modules for automating healthcare applications using Angular 4',
-        'Implement Redux with Angular which provides a predictable state container and Sass for styling the application',
-        'Unit testing the applications using Karma, Jasmine frameworks',
-        'Maintain the integrity of the user data in production database',
-        'Ensure the quality of code, using unit and integration tests and continuous integration',
+        'Developed modules for automating healthcare applications using Angular 4',
+        'Implemented Redux with Angular which provides a predictable state container and Sass for styling the application',
+        'Unit tested the applications using Karma, Jasmine frameworks',
+        'Maintained the integrity of the user data in production database',
+        'Ensured the quality of code, using unit and integration tests and continuous integration',
       ]
     },
     {

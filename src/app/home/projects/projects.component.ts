@@ -188,13 +188,13 @@ export class ProjectsComponent implements OnInit {
   ngOnInit() {
   }
 
-  selectedRow(item) {
-    this.projects[item].show = !this.projects[item].show;
-    for (let i = 0; i < this.projects.length; i++) {
-      if (i !== item) {
-        this.projects[i].show = false;
-      }
-    }
+  selectedRow(item, text) {
+    this.projects[item].show = text;
+    // for (let i = 0; i < this.projects.length; i++) {
+    //   if (i !== item) {
+    //     this.projects[i].show = false;
+    //   }
+    // }
   }
   options(text) {
     for (let i = 0; i < this.projects.length; i++) {

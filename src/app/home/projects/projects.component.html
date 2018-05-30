@@ -2,7 +2,9 @@
   <a class="options" (click)="options(true)">Expand All</a>
   <a class="options" (click)="options(false)">Collapse All</a>
 </div>
-<div *ngFor="let p of projects; let i = index" class="project"><a (click)="selectedRow(i)"><i class="fa fa-plus-circle"></i></a>
+<div *ngFor="let p of projects; let i = index" class="project">
+  <a *ngIf="!p.show" (click)="selectedRow(i, true)"><i class="fa fa-plus-circle"></i></a>
+  <a *ngIf="p.show" (click)="selectedRow(i, false)"><i class="fa fa-minus-circle"></i></a>
   <span>{{p.category}}</span>
   <div *ngIf="p.show">
     <ul>
